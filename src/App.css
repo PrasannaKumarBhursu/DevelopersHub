@@ -1,0 +1,27 @@
+.app-outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.app-inner-container {
+  width: 100%;
+}
+
+@media all and (min-width: 500px) {
+  .app-inner-container {
+    width: 70%;
+  }
+}
+
+.app-name {
+  color: rgb(184, 69, 212);
+  font-size: 40px;
+}
+
+.app-name-span {
+  text-decoration: overline;
+  color: rgb(53, 17, 45);
+}

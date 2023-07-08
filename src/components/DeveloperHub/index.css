@@ -1,0 +1,25 @@
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 40%;
+  padding: 12px;
+  border-radius: 15px;
+  border-width: 1px;
+  outline: none;
+}
+
+@media all and (max-width: 500px) {
+  .app-inner-container {
+    width: 80%;
+  }
+}
+
+.outer-developer-profile {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}

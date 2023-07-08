@@ -1,0 +1,54 @@
+.profile-container {
+  margin-bottom: 20px;
+  margin-right: 15px;
+  width: 45%;
+}
+
+@media all and (max-width: 768px) {
+  .profile-container {
+    width: 80%;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  width: 50px;
+  margin-right: 18px;
+}
+
+.user-name {
+  color: rgb(37, 37, 36);
+}
+
+.data-headings {
+  color: rgb(46, 39, 39);
+  font-weight: bold;
+  font-size: 16px;
+}
+.data {
+  font-weight: normal;
+}
+
+.icons {
+  font-size: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.twitter {
+  color: rgb(0, 174, 255);
+}
+
+.linkedin {
+  color: blue;
+}
+
+.github {
+  color: black;
+}

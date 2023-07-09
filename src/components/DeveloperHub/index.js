@@ -10,9 +10,16 @@ const DeveloperHub = () => {
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
-    const filtered = developersData.filter((developer) =>
-      developer.name.toLowerCase().includes(event.target.value.toLowerCase())
-    );
+    const filtered = developersData.filter((developer) => {
+      const { name, skills, location } = developer;
+      const searchValue = event.target.value.toLowerCase();
+      // Check if the developer's name, skills, or location matches the search value
+      return (
+        name.toLowerCase().includes(searchValue) ||
+        skills.some((skill) => skill.toLowerCase().includes(searchValue)) ||
+        location.toLowerCase().includes(searchValue)
+      );
+    });
     setFilteredDevelopers(filtered);
   };
 
